@@ -2,7 +2,7 @@
   <div class="feature">
     <ul>
       <li v-for="(item, i) in posts" :key="item.id" :class="{ first: i === 0 }">
-        <RdFeatureCard
+        <RdHomeFeatureCard
           :href="item.href"
           :img="item.img.src"
           :title="item.title"
@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import RdFeatureCard from '~/components/shared/RdFeatureCard.vue'
+import RdHomeFeatureCard from '~/components/shared/RdHomeFeatureCard.vue'
 
 export default {
   name: 'RdFeature',
 
   components: {
-    RdFeatureCard,
+    RdHomeFeatureCard,
   },
   props: {
     posts: {

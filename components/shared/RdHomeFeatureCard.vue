@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'RdFeatureCard',
+  name: 'RdHomeFeatureCard',
   props: {
     href: {
       type: String,
